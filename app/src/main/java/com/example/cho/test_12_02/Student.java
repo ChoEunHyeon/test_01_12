@@ -16,36 +16,14 @@ import java.util.ArrayList;
  */
 
 public class Student extends Fragment{
-    String[] m_names_2 = {"2016 Spring", "2016 Summer", "2016 Fall", "2016 Winter"};
-
-    int[] m_flags_2 = {R.drawable.spring, R.drawable.summer, R.drawable.fall, R.drawable.winter};
-
-    String[] m_text_2 = { "이건 2016 Spring이에요!!", "이건 2016 Summer에요!!", "이건 2016 Fall이에요!!", "이건 2016 Winter에요!!"};
 
     View view;
-    RecyclerView recyclerView;
-    RecyclerAdapter adapter;
-    RecyclerView.LayoutManager layoutManager;
-    ArrayList<Magazine> arrayList = new ArrayList<>();
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.magazine_main, container, false);
-        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerview);
-        Context context = view.getContext();
-        layoutManager = new LinearLayoutManager(context);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setHasFixedSize(true);
+        view = inflater.inflate(R.layout.student_scroll, container, false);
 
-        int count = 0;
-        for (String Name : m_names_2) {
-            arrayList.add(new Magazine(Name, m_flags_2[count], m_text_2[count]));
-            count++;
-        }
-
-        adapter = new RecyclerAdapter(arrayList);
-        recyclerView.setAdapter(adapter);
         return view;
     }
 }

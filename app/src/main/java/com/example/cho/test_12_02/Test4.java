@@ -28,7 +28,7 @@ public class Test4 extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
         magazine_tabLayout = (TabLayout) findViewById(R.id.magazine_tab_layout);
-        home_tabLayout = (TabLayout) findViewById(R.id.home_tab_layout);
+        //home_tabLayout = (TabLayout) findViewById(R.id.home_tab_layout);
         //home_viewPager = (ViewPager) findViewById(R.id.home_viewPager);
 
         magazine_viewPager = (ViewPager) findViewById(R.id.magazine_viewPager);
