@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
         home_viewPagerAdapter.addFragments(new Test1(), getResources().getString(R.string.home_to_info));
         home_viewPagerAdapter.addFragments(new Test2(), getResources().getString(R.string.home_to_mgz));
         // home_viewPagerAdapter.addFragments(new Test5(), getResources().getString(R.string.home_to_more));
-        home_viewPagerAdapter.addFragments(new Test4(), getResources().getString(R.string.home_to_more));
+        //home_viewPagerAdapter.addFragments(new Test4(), getResources().getString(R.string.home_to_more));
         home_viewPager.setAdapter(home_viewPagerAdapter);
         home_tabLayout.setupWithViewPager(home_viewPager);
         home_viewPager.setCurrentItem(1, true);
