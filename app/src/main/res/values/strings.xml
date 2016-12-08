@@ -4,10 +4,11 @@
 
 
     <!-- Strings related to magazine -->
-    <string name="mgz_tab_news">news</string>
+    <string name="mgz_tab_news">NEWS</string>
     <string name="mgz_tab_student">대원</string>
-    <string name="mgz_tab_instructor">지도자</string>
+    <string name="mgz_tab_instructor">인솔자</string>
     <string name="mgz_tab_group">연맹</string>
+    <string name="mgz_tab_CMS">CMS</string>
 
     <string name="mgz_main_title"> Girl Scout Seoul Magazine</string>
     <string name="mgz_published_date_test">2016 봄</string>

@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="radius">4dp</dimen>
+    <dimen name="magazine_top_margin">48dp</dimen>
+    <dimen name="magazine_bottom_margin">0dp</dimen>
+    <dimen name="magazine_left_margin">6dp</dimen>
+    <dimen name="magazine_right_margin">6dp</dimen>
+</resources>
