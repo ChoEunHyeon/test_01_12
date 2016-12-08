@@ -18,6 +18,7 @@
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".Test"></activity>
         <fragment android:name=".Test2"></fragment>
+        <activity android:name=".Test5"></activity>
     </application>
 
 </manifest>
