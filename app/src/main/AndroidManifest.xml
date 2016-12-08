@@ -18,6 +18,8 @@
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".Test"></activity>
         <fragment android:name=".Test2"></fragment>
+        <fragment android:name=".Test4"></fragment>
+
     </application>
 
 </manifest>
