@@ -16,16 +16,16 @@ import java.util.ArrayList;
  * Created by cho on 2016-11-12.
  */
 
-public class Test extends AppCompatActivity implements SearchView.OnQueryTextListener{
+public class Test extends AppCompatActivity implements SearchView.OnQueryTextListener {
     String[] m_names = {"2016 Spring", "2016 Summer", "2016 Fall", "2016 Winter"};
-
+    int[] m_flags = {R.drawable.spring, R.drawable.summer, R.drawable.fall, R.drawable.winter };
 
     Toolbar toolbar;
     RecyclerView recyclerView;
     RecyclerAdapter adapter;
     RecyclerView.LayoutManager layoutManager;
     ArrayList<Magazine> arrayList = new ArrayList<>();
-        int[] m_flags = {R.drawable.spring, R.drawable.summer, R.drawable.fall, R.drawable.winter };
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.magazine_main);
