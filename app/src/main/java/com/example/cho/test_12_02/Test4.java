@@ -4,33 +4,38 @@ package com.example.cho.test_12_02;
  * Created by Samsung on 2016-12-08.
  */
 
-import android.content.Context;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import java.util.ArrayList;
 
-public class Test4 extends Fragment {
+public class Test4 extends AppCompatActivity implements SearchView.OnQueryTextListener{
     String[] m_names = {"2016 Spring", "2016 Summer", "2016 Fall", "2016 Winter"};
 
     int[] m_flags = {R.drawable.spring, R.drawable.summer, R.drawable.fall, R.drawable.winter};
 
+    Toolbar toolbar;
     RecyclerView recyclerView;
     RecyclerAdapter adapter;
     RecyclerView.LayoutManager layoutManager;
     ArrayList<Magazine> arrayList = new ArrayList<>();
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.magazine_main, container, false);
-        Context context = view.getContext();
-        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerview);
-        layoutManager = new LinearLayoutManager(context);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.magazine_main);
+        toolbar = (Toolbar) findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+        layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
 
@@ -43,6 +48,33 @@ public class Test4 extends Fragment {
         adapter = new RecyclerAdapter(arrayList);
         recyclerView.setAdapter(adapter);
 
-        return view;
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_items, menu);
+        MenuItem menuItem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menuItem);
+        searchView.setOnQueryTextListener(this);
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        newText = newText.toLowerCase();
+        ArrayList<Magazine> newList = new ArrayList<>();
+        for(Magazine magazine : arrayList)
+        {
+            String name = magazine.getName().toLowerCase();
+            if(name.contains(newText))
+                newList.add(magazine);
+        }
+
+        adapter.setFilter(newList);
+        return true;
     }
 }
