@@ -20,6 +20,12 @@
         <fragment android:name=".Test2"></fragment>
         <activity android:name=".Test4"></activity>
         <fragment android:name=".Test5"></fragment>
+
+        <fragment android:name=".News"></fragment>
+        <fragment android:name=".Student"></fragment>
+        <fragment android:name=".Instructor"></fragment>
+        <fragment android:name=".Group"></fragment>
+        <fragment android:name=".CMS"></fragment>
     </application>
 
 </manifest>

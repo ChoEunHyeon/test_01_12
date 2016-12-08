@@ -5,10 +5,10 @@ package com.example.cho.test_12_02;
  */
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -16,65 +16,30 @@ import android.view.MenuItem;
 
 import java.util.ArrayList;
 
-public class Test4 extends AppCompatActivity implements SearchView.OnQueryTextListener{
-    String[] m_names = {"2016 Spring", "2016 Summer", "2016 Fall", "2016 Winter"};
-
-    int[] m_flags = {R.drawable.spring, R.drawable.summer, R.drawable.fall, R.drawable.winter};
+public class Test4 extends AppCompatActivity {
 
     Toolbar toolbar;
-    RecyclerView recyclerView;
-    RecyclerAdapter adapter;
-    RecyclerView.LayoutManager layoutManager;
-    ArrayList<Magazine> arrayList = new ArrayList<>();
+    TabLayout magazine_tabLayout;
+    ViewPager magazine_viewPager;
+    Magazine_ViewPagerAdapter magazine_viewPagerAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.magazine_basis);
 
-        setContentView(R.layout.magazine_main);
         toolbar = (Toolbar) findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setHasFixedSize(true);
-
-        int count = 0;
-        for (String Name : m_names) {
-            arrayList.add(new Magazine(Name, m_flags[count]));
-            count++;
-        }
-
-        adapter = new RecyclerAdapter(arrayList);
-        recyclerView.setAdapter(adapter);
-
-    }
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_items, menu);
-        MenuItem menuItem = menu.findItem(R.id.action_search);
-        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menuItem);
-        searchView.setOnQueryTextListener(this);
-        return true;
-    }
-
-    @Override
-    public boolean onQueryTextSubmit(String query) {
-        return false;
-    }
-
-    @Override
-    public boolean onQueryTextChange(String newText) {
-        newText = newText.toLowerCase();
-        ArrayList<Magazine> newList = new ArrayList<>();
-        for(Magazine magazine : arrayList)
-        {
-            String name = magazine.getName().toLowerCase();
-            if(name.contains(newText))
-                newList.add(magazine);
-        }
-
-        adapter.setFilter(newList);
-        return true;
+        magazine_tabLayout = (TabLayout) findViewById(R.id.magazine_tab_layout);
+        magazine_viewPager = (ViewPager) findViewById(R.id.magazine_viewPager);
+        magazine_viewPagerAdapter = new Magazine_ViewPagerAdapter(getSupportFragmentManager());
+        magazine_viewPagerAdapter.addFragments(new News(), getResources().getString(R.string.mgz_tab_news));
+        magazine_viewPagerAdapter.addFragments(new Student(), getResources().getString(R.string.mgz_tab_student));
+        magazine_viewPagerAdapter.addFragments(new Instructor(), getResources().getString(R.string.mgz_tab_instructor));
+        magazine_viewPagerAdapter.addFragments(new Group(), getResources().getString(R.string.mgz_tab_group));
+        magazine_viewPagerAdapter.addFragments(new CMS(), getResources().getString(R.string.mgz_tab_CMS));
+        magazine_viewPager.setAdapter(magazine_viewPagerAdapter);
+        magazine_tabLayout.setupWithViewPager(magazine_viewPager);
+        magazine_viewPager.setCurrentItem(0, true);
     }
 }

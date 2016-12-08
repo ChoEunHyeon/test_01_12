@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="our_green">#7b9c45</color>
+    <color name="our_background">#EEE0B6</color>
+    <color name="magazine_tab">#FFFFFF</color>
 </resources>
