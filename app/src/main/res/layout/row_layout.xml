@@ -33,7 +33,7 @@
         android:elevation="5dp"
         android:padding="20dp"
         app:cardUseCompatPadding="true"
-        app:cardCornerRadius="4dp"
+        app:cardCornerRadius="@dimen/radius"
         android:layout_gravity="center"
         android:layout_height="wrap_content">
     <RelativeLayout

@@ -6,21 +6,18 @@ package com.example.cho.test_12_02;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 
-import java.util.ArrayList;
 
 public class Test4 extends AppCompatActivity {
 
     Toolbar toolbar;
     TabLayout magazine_tabLayout;
+    TabLayout home_tabLayout;
     ViewPager magazine_viewPager;
+    ViewPager home_viewPager;
     Magazine_ViewPagerAdapter magazine_viewPagerAdapter;
 
     @Override
@@ -31,6 +28,9 @@ public class Test4 extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
         magazine_tabLayout = (TabLayout) findViewById(R.id.magazine_tab_layout);
+        home_tabLayout = (TabLayout) findViewById(R.id.home_tab_layout);
+        //home_viewPager = (ViewPager) findViewById(R.id.home_viewPager);
+
         magazine_viewPager = (ViewPager) findViewById(R.id.magazine_viewPager);
         magazine_viewPagerAdapter = new Magazine_ViewPagerAdapter(getSupportFragmentManager());
         magazine_viewPagerAdapter.addFragments(new News(), getResources().getString(R.string.mgz_tab_news));
@@ -41,5 +41,6 @@ public class Test4 extends AppCompatActivity {
         magazine_viewPager.setAdapter(magazine_viewPagerAdapter);
         magazine_tabLayout.setupWithViewPager(magazine_viewPager);
         magazine_viewPager.setCurrentItem(0, true);
+        //home_tabLayout.setupWithViewPager(home_viewPager);
     }
 }
