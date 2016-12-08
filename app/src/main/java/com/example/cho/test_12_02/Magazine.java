@@ -8,10 +8,12 @@ public class Magazine {
 
     private String name;
     private int flag_id;
+    private String text;
 
-    public Magazine(String name, int flag_id){
+    public Magazine(String name, int flag_id, String text){
         this.setName(name);
         this.setFlag_id(flag_id);
+        this.setText(text);
     }
 
     public int getFlag_id() {
@@ -29,4 +31,8 @@ public class Magazine {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getText(){ return text; }
+
+    public void setText(String text) { this.text = text; }
 }

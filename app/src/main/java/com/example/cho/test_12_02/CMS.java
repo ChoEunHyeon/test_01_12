@@ -20,6 +20,8 @@ public class CMS extends Fragment{
 
     int[] m_flags_5 = {R.drawable.spring, R.drawable.summer, R.drawable.fall, R.drawable.winter};
 
+    String[] m_text_5 = { "이건 2016 Spring이에요!!", "이건 2016 Summer에요!!", "이건 2016 Fall이에요!!", "이건 2016 Winter에요!!"};
+
     View view;
     RecyclerView recyclerView;
     RecyclerAdapter adapter;
@@ -38,7 +40,7 @@ public class CMS extends Fragment{
 
         int count = 0;
         for (String Name : m_names_5) {
-            arrayList.add(new Magazine(Name, m_flags_5[count]));
+            arrayList.add(new Magazine(Name, m_flags_5[count], m_text_5[count]));
             count++;
         }
 

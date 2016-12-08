@@ -20,6 +20,8 @@ public class Instructor extends Fragment{
 
     int[] m_flags_3 = {R.drawable.spring, R.drawable.summer, R.drawable.fall, R.drawable.winter};
 
+    String[] m_text_3 = { "이건 2016 Spring이에요!!", "이건 2016 Summer에요!!", "이건 2016 Fall이에요!!", "이건 2016 Winter에요!!"};
+
     View view;
     RecyclerView recyclerView;
     RecyclerAdapter adapter;
@@ -38,7 +40,7 @@ public class Instructor extends Fragment{
 
         int count = 0;
         for (String Name : m_names_3) {
-            arrayList.add(new Magazine(Name, m_flags_3[count]));
+            arrayList.add(new Magazine(Name, m_flags_3[count], m_text_3[count]));
             count++;
         }
 

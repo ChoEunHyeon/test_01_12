@@ -19,6 +19,7 @@ import java.util.ArrayList;
 public class Test extends AppCompatActivity implements SearchView.OnQueryTextListener {
     String[] m_names = {"2016 Spring", "2016 Summer", "2016 Fall", "2016 Winter"};
     int[] m_flags = {R.drawable.spring, R.drawable.summer, R.drawable.fall, R.drawable.winter };
+    String[] m_text = {"dkkddk", "gjkjdlfjs", "djlfkjelkw", "gjalkejoijlwf"};
 
     Toolbar toolbar;
     RecyclerView recyclerView;
@@ -38,7 +39,7 @@ public class Test extends AppCompatActivity implements SearchView.OnQueryTextLis
 
         int count = 0;
         for (String Name : m_names) {
-            arrayList.add(new Magazine(Name, m_flags[count]));
+            arrayList.add(new Magazine(Name, m_flags[count], m_text[count]));
             count++;
         }
 

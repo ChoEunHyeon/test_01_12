@@ -3,12 +3,15 @@ package com.example.cho.test_12_02;
 /**
  * Created by cho on 2016-11-17.
  */
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -34,6 +37,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyVeiw
     public void onBindViewHolder(MyVeiwHolder holder, int position) {
         holder.c_flag.setImageResource(arrayList.get(position).getFlag_id());
         holder.c_name.setText(arrayList.get(position).getName());
+        holder.c_text.setText(arrayList.get(position).getText());
     }
 
     @Override
@@ -45,12 +49,23 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyVeiw
     {
         ImageView c_flag;
         TextView c_name;
+        TextView c_text;
+        Context applicationContext;
 
         public MyVeiwHolder(View itemView) {
             super(itemView);
             c_flag = (ImageView) itemView.findViewById(R.id.flag);
             c_name = (TextView) itemView.findViewById(R.id.name);
+            c_text = (TextView) itemView.findViewById(R.id.card_text);
+            c_flag.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View itemView) {
+                    itemView.setLayoutDirection(R.layout.home_to_info);
+                }
+            });
         }
+
+
     }
 
     public void setFilter(ArrayList<Magazine> newList)
@@ -59,4 +74,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyVeiw
         arrayList.addAll(newList);
         notifyDataSetChanged();
     }
+
+
 }
