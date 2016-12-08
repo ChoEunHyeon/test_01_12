@@ -33,15 +33,13 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_basis);
 
-        toolbar = (Toolbar) findViewById(R.id.toolBar);
-        setSupportActionBar(toolbar);
         home_tabLayout = (TabLayout) findViewById(R.id.home_tab_layout);
         home_viewPager = (ViewPager) findViewById(R.id.home_viewPager);
         home_viewPagerAdapter = new Home_ViewPagerAdapter(getSupportFragmentManager());
         home_viewPagerAdapter.addFragments(new Test1(), getResources().getString(R.string.home_to_info));
         home_viewPagerAdapter.addFragments(new Test2(), getResources().getString(R.string.home_to_mgz));
         // home_viewPagerAdapter.addFragments(new Test5(), getResources().getString(R.string.home_to_more));
-        home_viewPagerAdapter.addFragments(new Test4(), getResources().getString(R.string.home_to_more));
+        //home_viewPagerAdapter.addFragments(new Test4(), getResources().getString(R.string.home_to_more));
         home_viewPager.setAdapter(home_viewPagerAdapter);
         home_tabLayout.setupWithViewPager(home_viewPager);
         home_viewPager.setCurrentItem(1, true);
