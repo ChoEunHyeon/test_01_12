@@ -64,8 +64,9 @@ public class Student01 extends AppCompatActivity {
     public void btn_previous(View view) {
 
         counter--;
-        if (counter == switcherImage)
-            counter = 0;
+        if (counter == -1 || counter==-2)
+            counter = switcherImage-1;
+
         myImageSwitcher.setImageResource(imageSwitcherImages[counter]);
 
         Animation animationOut_b = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
