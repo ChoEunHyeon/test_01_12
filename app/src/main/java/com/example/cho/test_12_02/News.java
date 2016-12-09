@@ -18,6 +18,7 @@ public class News extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.news_scroll, container, false);
 
+
         return view;
     }
 }

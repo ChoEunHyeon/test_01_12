@@ -5,7 +5,8 @@
     <dimen name="toolbar_height">56dp</dimen>
     <dimen name="radius">4dp</dimen>
     <dimen name="magazine_top_margin">48dp</dimen>
-    <dimen name="magazine_bottom_margin">2dp</dimen>
+    <dimen name="magazine_bottom_margin">10dp</dimen>
     <dimen name="magazine_left_margin">6dp</dimen>
     <dimen name="magazine_right_margin">6dp</dimen>
+    <dimen name="between">30dp</dimen>
 </resources>

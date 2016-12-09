@@ -1,6 +1,7 @@
 package com.example.cho.test_12_02;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -18,11 +20,97 @@ import java.util.ArrayList;
 public class Student extends Fragment{
 
     View view;
+    ImageView imgView1;
+    ImageView imgView2;
+    ImageView imgView3;
+    ImageView imgView4;
+    ImageView imgView5;
+    ImageView imgView6;
+    ImageView imgView7;
+    ImageView imgView8;
+    ImageView imgView9;
+    ImageView imgView10;
+    ImageView imgView11;
+    ImageView imgView12;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.student_scroll, container, false);
+        imgView1 = (ImageView) view.findViewById(R.id.img1);
+        imgView1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent redirect = new Intent(getActivity(),Student01.class);
+                getActivity().startActivity(redirect);
+            }
+        });
+        imgView2 = (ImageView) view.findViewById(R.id.img2);
+        imgView2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView3 = (ImageView) view.findViewById(R.id.img3);
+        imgView3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView4 = (ImageView) view.findViewById(R.id.img4);
+        imgView4.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView5 = (ImageView) view.findViewById(R.id.img5);
+        imgView5.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView6 = (ImageView) view.findViewById(R.id.img6);
+        imgView6.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView7 = (ImageView) view.findViewById(R.id.img7);
+        imgView7.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView8 = (ImageView) view.findViewById(R.id.img8);
+        imgView8.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView9 = (ImageView) view.findViewById(R.id.img9);
+        imgView9.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView10 = (ImageView) view.findViewById(R.id.img10);
+        imgView10.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView11 = (ImageView) view.findViewById(R.id.img11);
+        imgView11.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+        imgView12 = (ImageView) view.findViewById(R.id.img12);
+        imgView12.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+
+            }
+        });
+
 
         return view;
     }
