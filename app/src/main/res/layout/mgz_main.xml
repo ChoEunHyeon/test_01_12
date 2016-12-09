@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/our_background">
 
-    <ImageView
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        app:srcCompat="@drawable/girl"
-        android:id="@+id/imageView2"
-        android:layout_weight="1" />
+    <include layout = "@layout/mgzbar_del"/>
 
 
-    <Button
-        android:text="2016 겨울 연맹지 보러가기"
-        android:textColor="#5D5D5D"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:onClick="aButton"
-        android:gravity="center"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentEnd="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:elevation="5dp"
+                app:srcCompat="@drawable/girl"
+                android:id="@+id/imageView2"
+                android:background="#f1f133"/>
+
+
+                <TextView
+                    android:text="2016 겨울호 서울연맹 연맹지"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:foregroundGravity="left"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                <Button
+                    android:text="보러가기"
+                    android:textColor="#5D5D5D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button"
+                    android:onClick="aButton"
+                    android:gravity="center"
+
+                    android:foregroundGravity="right"
+                    tools:gravity="right" />
 
 </RelativeLayout>
+
+
+</LinearLayout>
