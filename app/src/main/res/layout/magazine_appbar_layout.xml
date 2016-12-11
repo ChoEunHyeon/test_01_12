@@ -16,6 +16,21 @@
         app:tabTextColor="@android:color/black"
         app:tabSelectedTextColor="@color/our_green"
         android:background="@color/magazine_tab"
-        app:tabPadding="0dp" />
+        app:tabPadding="0dp"
+        app:tabGravity="fill"/>
+
+
+    <android.support.design.widget.TabLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/home_tab_layout"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="bottom"
+        android:background="@color/our_green"
+        app:tabPadding="5dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorColor="#284415"
+        app:tabGravity="fill"
+        android:visibility="visible" />
 
 </android.support.design.widget.AppBarLayout>

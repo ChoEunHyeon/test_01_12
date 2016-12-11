@@ -1,10 +1,15 @@
 package com.example.cho.test_12_02;
 
+import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -38,12 +43,15 @@ public class HomeActivity extends AppCompatActivity {
         home_viewPagerAdapter.addFragments(new Test1(), "");
         home_viewPagerAdapter.addFragments(new Test2(), "");
         home_viewPagerAdapter.addFragments(new Test5(), "");
+
         //home_viewPagerAdapter.addFragments(new Test4(), getResources().getString(R.string.home_to_more));
         home_viewPager.setAdapter(home_viewPagerAdapter);
-        home_tabLayout.setupWithViewPager(home_viewPager);
-        home_viewPager.setCurrentItem(1,true);
-       setupTabIcons();
-       home_tabLayout.getTabAt(1).getIcon().setColorFilter(0xff284415, PorterDuff.Mode.SRC_IN);
+        home_viewPager.setCurrentItem(1, true);
+        setUpTabs(home_viewPager);
+        //  setupTabIcons();
+        //    home_tabLayout.getTabAt(1).getIcon().setColorFilter(0xff284415, PorterDuff.Mode.SRC_IN);
+
+
 
     }
 
@@ -63,41 +71,51 @@ public class HomeActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "'뒤로' 버튼을 한번 더 누르면 빠져나갑니다. ", Toast.LENGTH_SHORT).show();
         }
     }
+
     //2번 연속으로 누르면 종료
     private void setupTabIcons() {
+        final TabLayout tabs = (TabLayout) findViewById(R.id.home_tab_layout);
 
-
-        home_tabLayout.getTabAt(0).setIcon(R.drawable.info);
-        home_tabLayout.getTabAt(1).setIcon(R.drawable.book);
-        home_tabLayout.getTabAt(2).setIcon(R.drawable.mh);
-        for(int i=0;i<home_tabLayout.getChildCount();i++) {
-            home_tabLayout.getChildAt(i).setPadding(10, 10, 10, 10);
-        }
-
-
-        home_tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-                tab.getIcon().clearColorFilter();
-            }
-
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                 tab.getIcon().setColorFilter(0xff284415, PorterDuff.Mode.SRC_IN);
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
     }
 
 
+    private void setUpTabs(ViewPager viewPager) {
+
+        final TabLayout tabs = (TabLayout) findViewById(R.id.home_tab_layout);
+        if (tabs != null) {
+            tabs.setupWithViewPager(viewPager);
+            int tabCount = home_viewPagerAdapter.getCount();
+
+            for (int i = 0; i < tabCount; i++) {
+                TabLayout.Tab tab = tabs.getTabAt(i);
+
+                if (tab != null) {
+                    if (i == 0) {
+                        ImageView myCustomIcon = (ImageView) LayoutInflater.from(tabs.getContext()).inflate(R.layout.icon1, null);
+                        tab.setCustomView(myCustomIcon);
+                        //   setupTabIcons();
+                    } else if (i == 1) {
+                        ImageView myCustomIcon = (ImageView) LayoutInflater.from(tabs.getContext()).inflate(R.layout.icon2, null);
+                        tab.setCustomView(myCustomIcon);
+                    } else {
+                        ImageView myCustomIcon = (ImageView) LayoutInflater.from(tabs.getContext()).inflate(R.layout.icon3, null);
+                        tab.setCustomView(myCustomIcon);
+                    }
+                }
+            }
+
+        }
+
+        TabLayout.Tab tab = tabs.getTabAt(1);
 
 
+    }
 
+/*
+    protected void pressedinfo() {
+        ImageView iv = (ImageView) findViewById(R.id.tab0);
+        iv.setImageResource(R.drawable.pinfo);
+
+    }
+*/
 }
-
