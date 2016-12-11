@@ -10,58 +10,55 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/magazine_top_margin"
-        android:layout_marginBottom="@dimen/magazine_bottom_margin"
         android:layout_marginLeft="@dimen/magazine_left_margin"
         android:layout_marginRight="@dimen/magazine_right_margin"
-        android:background="@color/our_background">
+        android:weightSum="1">
 
-        <TextView
+
+
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-
-        <android.support.v7.widget.CardView
-            app:cardElevation="4dp"
-            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
             android:elevation="5dp"
-            android:padding="20dp"
-            app:cardUseCompatPadding="true"
-            app:cardCornerRadius="@dimen/radius"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            app:srcCompat="@drawable/cms1"
+            android:id="@+id/imageView_cms_1"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
 
-                <ImageView
-                    android:src="@drawable/spring"
-                    android:scaleType="fitXY"
-                    android:layout_height="250dp"
-                    android:layout_width="match_parent"
-                    android:foregroundGravity="center"
-                    android:background="@drawable/girl"
-                    android:layout_alignParentStart="true"
-                    android:clickable="true"/>
-
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
-
-        <TextView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/cms_3"
+            android:id="@+id/imageView_cms_3"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:drawable/alert_light_frame" />
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/cms_2"
+            android:id="@+id/imageView_cms_2"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:layout_marginTop="10dp"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        app:srcCompat="@drawable/button_cms"
+        android:id="@+id/imageButton_cms"
+            android:layout_weight="1.29"
+            android:elevation="16dp"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
 </ScrollView>

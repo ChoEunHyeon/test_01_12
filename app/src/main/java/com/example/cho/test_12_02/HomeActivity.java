@@ -1,14 +1,13 @@
 package com.example.cho.test_12_02;
 
-import android.app.ActionBar;
-import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 import android.support.design.widget.TabLayout;
 
@@ -36,13 +35,15 @@ public class HomeActivity extends AppCompatActivity {
         home_viewPager = (LockableViewPager) findViewById(R.id.home_viewPager);
         home_viewPager.setSwipeable(false);
         home_viewPagerAdapter = new Home_ViewPagerAdapter(getSupportFragmentManager());
-        home_viewPagerAdapter.addFragments(new Test1(), getResources().getString(R.string.home_to_info));
-        home_viewPagerAdapter.addFragments(new Test2(), getResources().getString(R.string.home_to_mgz));
-        home_viewPagerAdapter.addFragments(new Test5(), getResources().getString(R.string.home_to_more));
+        home_viewPagerAdapter.addFragments(new Test1(), "");
+        home_viewPagerAdapter.addFragments(new Test2(), "");
+        home_viewPagerAdapter.addFragments(new Test5(), "");
         //home_viewPagerAdapter.addFragments(new Test4(), getResources().getString(R.string.home_to_more));
         home_viewPager.setAdapter(home_viewPagerAdapter);
         home_tabLayout.setupWithViewPager(home_viewPager);
-        home_viewPager.setCurrentItem(1, true);
+        home_viewPager.setCurrentItem(1,true);
+       setupTabIcons();
+       home_tabLayout.getTabAt(1).getIcon().setColorFilter(0xff284415, PorterDuff.Mode.SRC_IN);
 
     }
 
@@ -63,6 +64,40 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
     //2번 연속으로 누르면 종료
+    private void setupTabIcons() {
+
+
+        home_tabLayout.getTabAt(0).setIcon(R.drawable.info);
+        home_tabLayout.getTabAt(1).setIcon(R.drawable.book);
+        home_tabLayout.getTabAt(2).setIcon(R.drawable.mh);
+        for(int i=0;i<home_tabLayout.getChildCount();i++) {
+            home_tabLayout.getChildAt(i).setPadding(10, 10, 10, 10);
+        }
+
+
+        home_tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                tab.getIcon().clearColorFilter();
+            }
+
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                 tab.getIcon().setColorFilter(0xff284415, PorterDuff.Mode.SRC_IN);
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+    }
+
+
+
+
 
 }
 

@@ -3,10 +3,16 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TextView
-        android:text="This page is for information"
+        android:text="걸스카우트"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
-
+        android:id="@+id/textView1"
+        android:background="@color/our_green"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:padding="1dp"
+        android:elevation="4dp"
+        android:gravity="center" />
 </LinearLayout>

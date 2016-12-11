@@ -3,6 +3,19 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <TextView
+        android:text="연맹지"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:background="@color/our_green"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:padding="1dp"
+        android:elevation="4dp"
+        android:gravity="center" />
+
     <include layout="@layout/magazine_appbar_layout"
         android:layout_height="wrap_content"
         android:layout_width="match_parent" />

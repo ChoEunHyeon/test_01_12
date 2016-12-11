@@ -4,15 +4,15 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="This page is for more"
+        android:text="모현 야영장"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView5" />
-
-    <Button
-        android:text="Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button5" />
+        android:id="@+id/textView3"
+        android:background="@color/our_green"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:padding="1dp"
+        android:elevation="4dp"
+        android:gravity="center" />
 
 </LinearLayout>

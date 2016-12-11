@@ -4,49 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/our_background">
+    android:background="@color/our_background"
+    android:orientation="vertical">
 
-    <include layout = "@layout/mgzbar_del"/>
+    <TextView
+        android:text="연맹지"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2_1"
+        android:background="@color/our_green"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:padding="1dp"
+        android:elevation="4dp"
+        android:gravity="center" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:weightSum="1">
+            android:layout_gravity="center_horizontal">
+
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:elevation="5dp"
-                app:srcCompat="@drawable/girl"
-                android:id="@+id/imageView2"
-                android:background="#f1f133"/>
-
-
-                <TextView
-                    android:text="2016 겨울호 서울연맹 연맹지"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView"
-                    android:foregroundGravity="left"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-                <Button
-                    android:text="보러가기"
-                    android:textColor="#5D5D5D"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button"
-                    android:onClick="aButton"
-                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:elevation="5dp"
+                    app:srcCompat="@drawable/girl"
+                    android:id="@+id/imageView2"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                tools:layout_gravity="center" />
 
-                    android:foregroundGravity="right"
-                    tools:gravity="right" />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="5">
+                                <TextView
+                                        android:text="2016 겨울호 서울걸스카우트 연맹지"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/textView"
+                                        android:foregroundGravity="center_vertical"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:layout_alignStart="@+id/imageView2"
+                                    android:layout_toStartOf="@+id/button"
+                                    android:layout_weight="1"
+                                    android:typeface="sans"
+                                    android:gravity="center" />
 
-</RelativeLayout>
+                                <Button
+                                    android:text="보러가기"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/button"
+                                   android:textColor="#ffffff"
+                                    android:onClick="aButton"
+                                    android:gravity="center"
+                                    android:foregroundGravity="center_vertical"
+                                    android:layout_alignBaseline="@+id/textView"
+                                    android:layout_alignBottom="@+id/textView"
+                                    android:layout_alignEnd="@+id/imageView2"
+                                    android:background="#212620"
+                                    android:layout_weight="4"
+                                    android:textStyle="bold" />
+
+
+                        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
