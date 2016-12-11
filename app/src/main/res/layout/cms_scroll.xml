@@ -57,7 +57,7 @@
         app:srcCompat="@drawable/button_cms"
         android:id="@+id/imageButton_cms"
             android:layout_weight="1.29"
-            android:elevation="16dp"
+            android:elevation="24dp"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
