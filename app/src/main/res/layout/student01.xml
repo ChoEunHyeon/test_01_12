@@ -2,7 +2,8 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/our_background">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -17,23 +18,24 @@
                 android:id="@+id/title"
                 android:text="한미합동캠프 (Friendship Camp)"
                 android:textStyle="bold"
-                android:textSize="15dp"
-                android:layout_marginTop="10dp"
+                android:textSize="23dp"
+                android:layout_marginTop="30dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+
+               />
 
             <TextView
                 android:id="@+id/content"
-                android:text="    지난 4월30일(토) - 5월1일(일) 곤지암야영장에서 서울걸스카우트 대원와 USAGSO-Seoul 대원이 함께 한 한미합동캠프(Friendship Camp)가 열렷습니다. &lt;br&gt;
-                 서울대원과 지도자 90명,  USAGSO-Seoul 대원과 지도자 150명 등 총 240명이 참가한 이번 캠프는 떡꼬치 만들기 및 미니약과, 걸스카우트 아리랑, 손재주와 게임, 다양한 부스활동 등으로 서로 다른 문화를 경험하고 익힐 수 있는 시간이었습니다.&lt;br&gt;
-                  또한 Camp Fire 시간에는 장기자랑을 통해 숨은 기량을 뽐내기도 하였습니다. &lt;br&gt;"
-                android:textSize="12sp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:text=" 지난 4월30일(토) - 5월1일(일) 곤지암야영장에서 서울걸스카우트대원과 USAGSO-Seoul 대원이 함께 한 한미합동캠프(Friendship Camp)가 열렷습니다. \n\n 서울대원과 지도자 90명,  USAGSO-Seoul 대원과 지도자 150명 등 총 240명이 참가한 이번 캠프는 떡꼬치 만들기 및 미니약과, 걸스카우트 아리랑, 손재주와 게임, 다양한 부스활동 등으로 서로 다른 문화를 경험하고 익힐 수 있는 시간이었습니다.\n\n 또한 Camp Fire 시간에는 장기자랑을 통해 숨은 기량을 뽐내기도 하였습니다. \n"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/alert_light_frame"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,19 +49,15 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="◀"
-                    android:background="#FFFFFF"
-                    android:textSize="9dp"
                     android:onClick="btn_previous"
-                    />
+                    android:background="@android:drawable/ic_media_previous" />
 
                 <ImageSwitcher
                     android:id="@+id/switcher"
-                    android:layout_marginTop="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
                     android:layout_weight="4"
+
                     android:foregroundGravity="center"/>
 
 
@@ -69,9 +67,7 @@
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="▶"
-                    android:background="#FFFFFF"
-                    android:textSize="9dp"
+                    android:background="@android:drawable/ic_media_next"
                     android:onClick="btn_next"
                     />
             </LinearLayout>
