@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
 
     <TextView
@@ -15,4 +18,48 @@
         android:padding="1dp"
         android:elevation="4dp"
         android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/splash_image"
+            android:id="@+id/imageView6"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:text="연맹장 인사"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            tools:gravity="center"
+            android:layout_gravity="center_vertical|center"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:text="사무처 안내"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            tools:gravity="center"
+            android:layout_gravity="center_vertical|center"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:text="수품 보급소 안내"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            tools:gravity="center"
+            android:layout_gravity="center_vertical|center" />
+    </LinearLayout>
+
+
 </LinearLayout>
