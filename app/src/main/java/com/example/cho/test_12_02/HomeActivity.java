@@ -1,8 +1,10 @@
 package com.example.cho.test_12_02;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -13,8 +15,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.support.design.widget.TabLayout;
+
+
 
 /**
  * Created by cho on 2016-12-02.
@@ -50,7 +55,6 @@ public class HomeActivity extends AppCompatActivity {
         setUpTabs(home_viewPager);
         //  setupTabIcons();
         //    home_tabLayout.getTabAt(1).getIcon().setColorFilter(0xff284415, PorterDuff.Mode.SRC_IN);
-
 
 
     }
