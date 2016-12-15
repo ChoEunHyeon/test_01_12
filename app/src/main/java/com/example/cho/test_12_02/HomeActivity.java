@@ -44,6 +44,7 @@ public class HomeActivity extends AppCompatActivity {
         home_tabLayout = (TabLayout) findViewById(R.id.home_tab_layout);
         home_viewPager = (LockableViewPager) findViewById(R.id.home_viewPager);
         home_viewPager.setSwipeable(false);
+
         home_viewPagerAdapter = new Home_ViewPagerAdapter(getSupportFragmentManager());
         home_viewPagerAdapter.addFragments(new Test1(), "");
         home_viewPagerAdapter.addFragments(new Test2(), "");
