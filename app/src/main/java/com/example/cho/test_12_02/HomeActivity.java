@@ -49,6 +49,7 @@ public class HomeActivity extends AppCompatActivity {
         home_viewPagerAdapter.addFragments(new Test2(), "");
         home_viewPagerAdapter.addFragments(new Test5(), "");
 
+
         //home_viewPagerAdapter.addFragments(new Test4(), getResources().getString(R.string.home_to_more));
         home_viewPager.setAdapter(home_viewPagerAdapter);
         home_viewPager.setCurrentItem(1, true);
