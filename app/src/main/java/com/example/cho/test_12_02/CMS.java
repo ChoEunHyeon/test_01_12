@@ -41,7 +41,6 @@ public class CMS extends Fragment {
 
               //AlertDialogCreate();
                 FragmentManager fm = getFragmentManager();
-
                 CMS_dialog dialogFragment = new CMS_dialog ();
             //    dialogFragment.getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
                 dialogFragment.show(fm,"m");
