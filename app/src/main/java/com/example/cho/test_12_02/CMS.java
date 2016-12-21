@@ -26,6 +26,8 @@ public class CMS extends Fragment {
 
     View view;
 
+
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
