@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/our_background"
+    android:layout_gravity="center"
+    android:weightSum="1"
+    android:elevation="1dp">
+
+    <TextView
+        android:text="소개"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_s_1"
+        android:background="@color/our_green"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:padding="1dp"
+        android:elevation="6dp"
+        android:gravity="center" />
+    <TextView
+        android:text="수품보급소 안내"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_s_2"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:padding="1dp"
+        android:elevation="6dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="169dp"
+        android:layout_height="181dp"
+        app:srcCompat="?android:attr/alertDialogIcon"
+        android:id="@+id/imageView_s_4"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="준비 중 입니다"
+        android:textColor="#000000"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -29,7 +29,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/splash_image"
+            app:srcCompat="@drawable/infoimg"
             android:id="@+id/imageView6"
             android:layout_marginBottom="20dp"/>
 
@@ -37,28 +37,32 @@
             android:text="연맹장 인사"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button4"
+            android:id="@+id/buttons_4"
             tools:gravity="center"
             android:layout_gravity="center_vertical|center"
             android:layout_marginBottom="10dp"
-            />
+            android:background="#e1ca18"
+            android:fadingEdge="horizontal|vertical" />
 
         <Button
             android:text="사무처 안내"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button3"
+            android:id="@+id/buttons_3"
             tools:gravity="center"
             android:layout_gravity="center_vertical|center"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="30dp"
+            android:background="#e1ca18" />
 
         <Button
             android:text="수품 보급소 안내"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button2"
+            android:padding="10dp"
+            android:id="@+id/buttons_2"
             tools:gravity="center"
-            android:layout_gravity="center_vertical|center" />
+            android:layout_gravity="center_vertical|center"
+            android:background="#7b701a" />
     </LinearLayout>
 
 

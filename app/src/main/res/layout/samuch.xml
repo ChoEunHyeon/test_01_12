@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/our_background">
+    <TextView
+        android:text="소개"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_s_1"
+        android:background="@color/our_green"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:padding="1dp"
+        android:elevation="6dp"
+        android:gravity="center" />
+    <TextView
+        android:text="사무처 안내"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_s_2"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:padding="1dp"
+        android:elevation="6dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vd"
+        android:padding="10dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center"/>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:background="#ffffff"
+        android:layout_gravity="center"/>
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:text="   사무처장 : 김해정 (총괄)  H.P: 010-3591-8353\n   대    리: 오혜령 (재무, 총무)  TEL:734-8353\n   계    장: 이승윤 (조직, 지도자교육)   TEL:735-8527\n   직    원: 기성은 (대원활동, 홍보.IT, 국제)  TEL: 732-0964"
+    />
+<View
+    android:layout_marginTop="10dp"
+    android:layout_height="2dp"
+    android:background="#ffffff"
+    android:layout_width="300dp"
+    android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text = "   주소: 서울 종로구 율곡로 47\n             걸스카우트회관 502호, 503호(안국역 1번출구)"/>
+
+</LinearLayout>

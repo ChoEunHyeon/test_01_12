@@ -18,9 +18,11 @@
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".Test"></activity>
         <fragment android:name=".Test2"></fragment>
+
+        <activity android:name=".Samuchc"></activity>
         <activity android:name=".Test4"></activity>
         <fragment android:name=".Test5"></fragment>
-
+        <activity android:name=".Supum"></activity>
 
         <fragment android:name=".News"></fragment>
         <fragment android:name=".Student"></fragment>
@@ -28,6 +30,7 @@
         <fragment android:name=".Group"></fragment>
         <fragment android:name=".CMS"></fragment>
 
+        <activity android:name=".Yenmeangjang"></activity>
         <activity android:name=".Student01"></activity>
     </application>
 

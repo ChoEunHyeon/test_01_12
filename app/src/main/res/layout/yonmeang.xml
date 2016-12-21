@@ -2,19 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="@color/our_background"
+    android:layout_gravity="center"
+    android:weightSum="1"
+    android:elevation="1dp">
 
     <TextView
         android:text="소개"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
+        android:id="@+id/textView_s_1"
         android:background="@color/our_green"
         android:textSize="30dp"
         android:textColor="#ffffff"
         android:padding="1dp"
-        android:elevation="4dp"
+        android:elevation="6dp"
+        android:gravity="center" />
+
+    <TextView
+        android:text="연맹장 인사"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_s_21"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:padding="1dp"
+        android:elevation="6dp"
         android:gravity="center" />
 
     <ScrollView
@@ -27,20 +41,46 @@
             android:orientation="vertical" >
 
             <ImageView
+                android:layout_marginTop="50dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/img1"
-                android:id="@+id/imageView3" />
+                android:src="@drawable/img1"
+                android:id="@+id/imageView_s_41a"
+                android:layout_gravity="center" />
 
-            <ImageView
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_height="2dp"
+                android:background="#ffffff"
+                android:layout_width="300dp"
+                android:layout_gravity="center"/>
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/img2"
-                android:id="@+id/imageView4" />
+                android:padding="11dp"
+                android:layout_marginTop="10dp"
+                android:text=" 2016년 12월, 164호를 끝으로 서울걸스카우트 소식지 발간을 종료하고 서울 걸스카우트 앱을 공식적으로 출시하게 되었습니다.\n\n  변화의 속도가 더욱 빨라지는 요즘, 소식지 앱을 통해 걸스카우트 대원을 포함한 모든 청소년 지도자 학부모들과 직접 소통함으로써 조직 활성화의 기반을 마련하고자 합니다.\n\n  연 10회 소식을 발행할 서울 걸스카우트 앱이 많은 사람들의 참여로 활성화 되어 무성한 나무로 자랄 수 있기를 바랍니다.\n\n  소식지를 앱으로 변환할 수 있었던 것은 컴퓨터 학과에 재학 중인 박근령 연구대원과 조은현, 염수영, 김주영, 송송이 학생의 재능기부와 홍보분과의원, TF팀의 뒷받침, 무엇보다 그동안 100여명의 CMS후원회원 여러분들의 꾸준한 협조가 있었기 때문입니다."
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text= "이 자리를 빌어 많은 분들께 다시 한번 감사드립니다.\n\n\n "
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15.5dp"
+                android:layout_gravity="center"/>
+
 
 
 
         </LinearLayout>
     </ScrollView>
+
 
 </LinearLayout>
