@@ -16,22 +16,39 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".Test"></activity>
+
         <fragment android:name=".Test2"></fragment>
 
         <activity android:name=".Samuchc"></activity>
         <activity android:name=".Test4"></activity>
         <fragment android:name=".Test5"></fragment>
         <activity android:name=".Supum"></activity>
-
+        <activity android:name=".Instructor01"></activity>
+        <activity android:name=".Instructor02"></activity>
         <fragment android:name=".News"></fragment>
         <fragment android:name=".Student"></fragment>
         <fragment android:name=".Instructor"></fragment>
         <fragment android:name=".Group"></fragment>
         <fragment android:name=".CMS"></fragment>
-
+        <activity android:name=".MH"></activity>
         <activity android:name=".Yenmeangjang"></activity>
+        <activity android:name=".Group01"></activity>
         <activity android:name=".Student01"></activity>
+        <activity android:name=".Student02"></activity>
+        <activity android:name=".Student03"></activity>
+        <activity android:name=".Student04"></activity>
+        <activity android:name=".Student05"></activity>
+        <activity android:name=".Student06"></activity>
+        <activity android:name=".Student07"></activity>
+        <activity android:name=".Student08"></activity>
+        <activity android:name=".Student09"></activity>
+        <activity android:name=".Student10"></activity>
+        <activity android:name=".Student11"></activity>
+        <activity android:name=".Student12"></activity>
+        <activity android:name=".Instructor03"></activity>
+        <activity android:name=".Yearly"></activity>
+
+
     </application>
 
 </manifest>

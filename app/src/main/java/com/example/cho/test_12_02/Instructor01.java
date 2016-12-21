@@ -1,11 +1,8 @@
-package com.example.cho.test_12_02; /**
- * Created by Samsung on 2016-12-09.
- */
+package com.example.cho.test_12_02;
 
-import android.support.v4.view.ViewPager;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -14,10 +11,13 @@ import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher;
 
-public class Student01 extends AppCompatActivity {
+/**
+ * Created by cho on 2016-12-21.
+ */
 
+public class Instructor01 extends AppCompatActivity{
     ImageSwitcher myImageSwitcher;
-    int imageSwitcherImages[] = {R.drawable.friendship_camp_01, R.drawable.friendship_camp_02, R.drawable.friendship_camp_03, R.drawable.friendship_camp_04, R.drawable.friendship_camp_05};
+    int imageSwitcherImages[] = {R.drawable.seoulinstructorday_01, R.drawable.seoulinstructorday_02, R.drawable.seoulinstructorday_03, R.drawable.seoulinstructorday_04, R.drawable.seoulinstructorday_05,R.drawable.seoulinstructorday_06};
 
     int switcherImage = imageSwitcherImages.length;
     int counter = -1;
@@ -25,7 +25,7 @@ public class Student01 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.student01);
+        setContentView(R.layout.instructor01);
 
         myImageSwitcher = (ImageSwitcher)findViewById(R.id.switcher);
         Button btn_next = (Button) findViewById(R.id.btn_next);
@@ -40,7 +40,7 @@ public class Student01 extends AppCompatActivity {
                 ));
 
                 switcherImageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                switcherImageView.setImageResource(R.drawable.friendship_camp_01);
+                switcherImageView.setImageResource(R.drawable.seoulinstructorday_01);
                 //switcherImageView.setMaxHeight(100);
                 return switcherImageView;
             }

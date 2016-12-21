@@ -47,67 +47,78 @@ public class Student extends Fragment{
         imgView2 = (ImageView) view.findViewById(R.id.img2);
         imgView2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(),Student02.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView3 = (ImageView) view.findViewById(R.id.img3);
         imgView3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(), Student03.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView4 = (ImageView) view.findViewById(R.id.img4);
         imgView4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(), Student04.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView5 = (ImageView) view.findViewById(R.id.img5);
         imgView5.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(), Student05.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView6 = (ImageView) view.findViewById(R.id.img6);
         imgView6.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(), Student06.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView7 = (ImageView) view.findViewById(R.id.img7);
         imgView7.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(),Student07.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView8 = (ImageView) view.findViewById(R.id.img8);
         imgView8.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(),Student08.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView9 = (ImageView) view.findViewById(R.id.img9);
         imgView9.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(),Student09.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView10 = (ImageView) view.findViewById(R.id.img10);
         imgView10.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(),Student10.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView11 = (ImageView) view.findViewById(R.id.img11);
         imgView11.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(),Student11.class);
+                getActivity().startActivity(redirect);
             }
         });
         imgView12 = (ImageView) view.findViewById(R.id.img12);
         imgView12.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-
+                Intent redirect = new Intent(getActivity(),Student12.class);
+                getActivity().startActivity(redirect);
             }
         });
 

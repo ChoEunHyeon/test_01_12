@@ -7,13 +7,17 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/title"
                 android:textColor="#000000"
-                android:text="한미합동캠프 (Friendship Camp)"
+                android:text="서울지도자의 날 \n- 명예의 전당 및 역사전시실 오픈식"
                 android:textStyle="bold"
                 android:textSize="23dp"
                 android:layout_marginTop="30dp"
@@ -21,18 +25,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-               />
-
+                />
             <TextView
                 android:id="@+id/content"
                 android:padding="20dp"
-                android:text=" 지난 4월30일(토) - 5월1일(일) 곤지암야영장에서 서울걸스카우트대원과 USAGSO-Seoul 대원이 함께 한 한미합동캠프(Friendship Camp)가 열렷습니다. \n\n 서울대원과 지도자 90명,  USAGSO-Seoul 대원과 지도자 150명 등 총 240명이 참가한 이번 캠프는 떡꼬치 만들기 및 미니약과, 걸스카우트 아리랑, 손재주와 게임, 다양한 부스활동 등으로 서로 다른 문화를 경험하고 익힐 수 있는 시간이었습니다.\n\n 또한 Camp Fire 시간에는 장기자랑을 통해 숨은 기량을 뽐내기도 하였습니다. \n"
+                android:textColor="#000000"
+                android:text=" 지난 5월21일(토) 모현야영장에서는 연맹장님을 비롯한 이사 등 지도자 60명이 참가한 가운데 명예의 전당 및 역사전시실 오픈식을 겸한 서울지도자의 날 행사가 있습니다.  행사에 참가한 지도자들은 역사전시실을 둘러보면 걸스카우트의 역사를 되돌아보는 시간을 갖고 고추장 만들기, 포크댄스 등으로 오랜만에 만나는 지도자들은 서로의 안부를 전하며 화합의 시간을 가졌습니다.  \n"
                 android:textSize="15dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
-                android:textColor="#000000"
                 android:layout_height="wrap_content"
                 android:background="@android:drawable/alert_light_frame"/>
 
@@ -73,6 +76,6 @@
 
         </LinearLayout>
 
-
+    </LinearLayout>
 
 </ScrollView>

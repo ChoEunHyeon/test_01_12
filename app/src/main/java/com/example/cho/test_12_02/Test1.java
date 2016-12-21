@@ -47,6 +47,14 @@ public class Test1 extends Fragment {
             }
         });
 
+        Button button0 = (Button)view.findViewById(R.id.buttons_0);
+        button0.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                Intent redirect = new Intent(getActivity(),Yearly.class);
+                getActivity().startActivity(redirect);
+            }
+        });
+
         return view;
     }
 

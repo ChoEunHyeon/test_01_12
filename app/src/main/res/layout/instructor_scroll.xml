@@ -5,63 +5,173 @@
     android:layout_height="match_parent"
     android:background="@color/our_background">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/magazine_top_margin"
-        android:layout_marginBottom="@dimen/magazine_bottom_margin"
-        android:layout_marginLeft="@dimen/magazine_left_margin"
-        android:layout_marginRight="@dimen/magazine_right_margin"
-        android:background="@color/our_background">
-
-        <TextView
+        android:layout_marginBottom="@dimen/magazine_bottom_margin">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="2016 spring"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/magazine_bottom_margin"
+            android:layout_marginLeft="@dimen/magazine_left_margin"
+            android:layout_marginRight="@dimen/magazine_right_margin"
+            android:background="@color/our_background">
 
-        <android.support.v7.widget.CardView
-            app:cardElevation="4dp"
-            android:layout_width="wrap_content"
-            android:elevation="5dp"
-            android:padding="20dp"
-            app:cardUseCompatPadding="true"
-            app:cardCornerRadius="@dimen/radius"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content">
-            <RelativeLayout
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="서울지도자의 날 \n- 명예의 전당 및 역사전시실 오픈식"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/text1"/>
+
+            <android.support.v7.widget.CardView
+                app:cardElevation="4dp"
                 android:layout_width="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/radius"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:src="@drawable/spring"
-                    android:scaleType="fitXY"
-                    android:layout_height="250dp"
-                    android:layout_width="match_parent"
-                    android:foregroundGravity="center"
-                    android:background="@drawable/girl"
-                    android:layout_alignParentStart="true"
-                    android:clickable="true"/>
+                    <ImageView
+                        android:src="@drawable/seoulinstructorday_01"
+                        android:scaleType="fitXY"
+                        android:layout_height="200dp"
+                        android:layout_width="match_parent"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentStart="true"
+                        android:clickable="true"
+                        android:id="@+id/imgi1"/>
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="지난 5월21일(토) 모현야영장에서는 연맹장님을 비롯한 이사 등 지도자 60명이 참가한 가운데 명예의 전당 및 역사전시실 오픈식을 겸한 서울지도자의 날 행사가 있었습니다."
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:gravity="left"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="지도자상급강습"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/text2"/>
 
+            <android.support.v7.widget.CardView
+                app:cardElevation="4dp"
+                android:layout_width="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/radius"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/instructorseniorclass_01"
+                        android:scaleType="fitXY"
+                        android:layout_height="200dp"
+                        android:layout_width="match_parent"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentStart="true"
+                        android:clickable="true"
+                        android:id="@+id/imgi2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="지난 6월 11일(토)-12(일) 연맹회관 10층에서 32명의 지도자가 참가한 지도자상급강습에서는 걸스카우트 활동에 필요한 기술과 지식을 습득하고 향상된 능력을 함양시킬 수 있는 뜻 깊은 시간을 가졌습니다."
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:gravity="left"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="지도자전국대회"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/text3"/>
+            <android.support.v7.widget.CardView
+                app:cardElevation="4dp"
+                android:layout_width="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/radius"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:src="@drawable/ins_logo1"
+                        android:scaleType="fitXY"
+                        android:layout_height="74dp"
+                        android:layout_width="match_parent"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentStart="true"
+                        android:clickable="true"
+                        android:id="@+id/img3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="지난 10월 15일(토) - 16일(일) 양재동 더케이호텔에서 걸스카우트 지도자전국대회가 개최되었습니다."
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:gravity="left"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

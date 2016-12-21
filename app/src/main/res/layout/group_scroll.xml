@@ -5,63 +5,184 @@
     android:layout_height="match_parent"
     android:background="@color/our_background">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/magazine_top_margin"
-        android:layout_marginBottom="@dimen/magazine_bottom_margin"
-        android:layout_marginLeft="@dimen/magazine_left_margin"
-        android:layout_marginRight="@dimen/magazine_right_margin"
-        android:background="@color/our_background">
+        android:layout_marginBottom="@dimen/magazine_bottom_margin">
 
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="2016 spring"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/magazine_bottom_margin"
+            android:layout_marginLeft="@dimen/magazine_left_margin"
+            android:layout_marginRight="@dimen/magazine_right_margin"
+            android:background="@color/our_background"
+            >
 
-        <android.support.v7.widget.CardView
-            app:cardElevation="4dp"
-            android:layout_width="wrap_content"
-            android:elevation="5dp"
-            android:padding="20dp"
-            app:cardUseCompatPadding="true"
-            app:cardCornerRadius="@dimen/radius"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content">
-            <RelativeLayout
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="조직전략워크숍(2차)"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/text1"/>
+
+            <android.support.v7.widget.CardView
+                app:cardElevation="4dp"
                 android:layout_width="wrap_content"
+                android:elevation="5dp"
+                android:padding="20dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/radius"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:src="@drawable/spring"
-                    android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    <ImageView
+                        android:src="@drawable/workshop"
+                        android:scaleType="fitXY"
+                        android:layout_height="200dp"
+                        android:layout_width="match_parent"
+                        android:foregroundGravity="center"
+                        android:layout_alignParentStart="true"
+                        android:clickable="true"
+                        android:id="@+id/img1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="지난 10월 29일(토) 연맹회관 10층에서 25명이 참석한 가운데 조직전략워크숍이 열렸습니다."
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:gravity="left"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="◆\n◆\n"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/text2_r"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="찬조해 주셔서 감사합니다"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/text2"/>
+
+
+            <TextView
+                android:textColor="#000000"
+                android:id="@+id/content"
+                android:padding="5dp"
+                android:text="1) 대방문 찬조금 : 이무련 부연맹장\n\n2) 서울 지도자의 날,명예의 전당 및 역사전시실 개관식\n  * 찬조금 : 진규춘 전연맹장, 오윤경 이사, 백금자 감사,\n   주미형 훈련강사, 이순이 자문위원, 자문위원 일동\n  * 손재주재료 제공(비즈핸드폰고리) : 김양덕이사\n  * 반찬 및 간식 제공 : 김온숙 연맹장, 이두희 부연맹장,\n   이무련 부연맹장\n  * 역사전시실 추가 비용: 이무련부연맹장\n\n3) 모현야영장 찬조금 : 최중희 전부총재, 정범순 전연맹장\n\n4) 제35회서울걸스카우트종합야영 환경캠프\n  * 찬조금 : 김온숙 연맹장,서향자 이사, 교육문화여행\n\n5) 유치원 원장간담회\n * 찬조금 : 이수자 자문위원회 회장,\n * 음식제공: 이무련부연맹장, 이두희부연맹장\n\n6) 제2차 조직전략워크숍\n  * 찬조금 : 김연남 자문위원\n\n7) 창립70주년기념 지도자 전국대회\n  * 세계 각 나라 바자물품 찬조 : 김온숙연맹장, 이무련부연맹장, 이두희부연맹장, 장형임부연맹장, 정선교이사, 김양이덕사, 정란순이사, 서울연맹"
+                android:textSize="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:foregroundGravity="center"
-                    android:background="@drawable/girl"
-                    android:layout_alignParentStart="true"
-                    android:clickable="true"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                   >
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="◆\n◆\n"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/text2_r1"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="편집후기"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/text3"/>
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="30dp">
+
+                        <TextView
+                            android:layout_weight="3"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:padding="5dp"
+                            android:textSize="12dp"
+                            android:text=" 1989년‘서울걸스카우트’지가 복간되면서 서울연맹과 인연을 맺었습니다. 그리고 2009년 서울남부연맹의‘서울걸스카우트’지로 다시 인연을 맺어 8년이 되었습니다. 매번 준비하면서 마감을 맞추기 위해 늦은 밤까지 작업하며 여러 일들이 있었습니다. 이제 시대에 맞춰 웹진으로 ‘서울걸스카우트’가 새롭게 태어납니다.\n 보다 가깝게 그리고 손쉽게 여러분 곁으로 다가가는 서울걸스카우트가 되길 기대합니다. 그간 즐거웠습니다."/>
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/g_ogh1"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
     </LinearLayout>
-
 </ScrollView>

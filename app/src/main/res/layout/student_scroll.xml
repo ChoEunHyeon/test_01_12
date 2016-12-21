@@ -6,10 +6,6 @@
     android:background="@color/our_background">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/magazine_bottom_margin">
-    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,9 +43,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/winter_friendship_camp_01"
+                    android:src="@drawable/friendship_camp_01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
                     android:layout_alignParentStart="true"
@@ -76,7 +72,7 @@
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
+            android:text="한국걸스카우트 창립 70주년 기념 \n서울걸스카우트 어울마당 "
             android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -94,41 +90,41 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/seventieth_anniversary_01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img2"/>
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 5월 28일 . 롯데월드I, II에서 대원 756명, 지도자 80명 등 총 845명이 참가한 어울마당을 진행하였습니다."
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
-            android:textSize="18dp"
+            android:text="세상을 바꾸는 소녀들의 '나는 멋진 여성 리더’"
+            android:textSize="16dp"
             android:textStyle="bold"
             android:textColor="#000000"
             android:gravity="left"
@@ -145,41 +141,41 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/leader_camp_01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img3"/>
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="● 소녀 연장대 리더십훈련(GS-LDP Award)및 합동선서식’\n●  진달래 리더십캠프(GS-LDP Award)' "
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
-            android:textSize="18dp"
+            android:text="해양소년단과 함께하는 '신나는 수상활동'"
+            android:textSize="16dp"
             android:textStyle="bold"
             android:textColor="#000000"
             android:gravity="left"
@@ -196,40 +192,40 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/water_activity_01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img4"/>
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 7월 2일(토) 당산동 한강고수부지의 해양스포츠훈련장에서 총 208명(대원 182, 지도자 27명)이 참가한 가운데 수상훈련이 있었습니다."
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
+            android:text="영국걸스카우트와 함께하는 문화교류"
             android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -247,41 +243,41 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/uk_girls_01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img5"/>
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 8월 8일(월) 연맹회관에서 한국을 방문한 영국걸스카우트 대원들과의 합동대집회가 있었습니다.  "
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
-            android:textSize="18dp"
+            android:text="제 35회 서울걸스카우트 종합야영 ‘환경캠프’"
+            android:textSize="16dp"
             android:textStyle="bold"
             android:textColor="#000000"
             android:gravity="left"
@@ -298,40 +294,40 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/environment_camp_01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 7월 15일(금)-17일(토) 강원도 양양 일대(숙소: 오색그린야드 호텔)에서 총 658명(대원 588명, 지도자 70명)이 참가한 제 35회 서울걸스카우트 종합야영 ‘환경캠프’가 열렸습니다."
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
 
-            </RelativeLayout>
+            </LinearLayout>
         </android.support.v7.widget.CardView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
 
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
+            android:text="초록별 합동 숲 속 놀이"
             android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -349,40 +345,40 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/play_in_forest01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img7"/>
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 10월12일(수) 모현야영장에서는 이화유치원과 목양지역대 초록별대원 총126명(대원106명, 지도자20명) 들이 합동으로 숲체험 전문 강사들의 진행으로‘숲속놀이’가 열렸습니다."
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
+            android:text="미래.통일을 준비하는 Girl!"
             android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -400,40 +396,40 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/future_girl01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img8"/>
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 10월8일(토) 여의도공원 문화의 마당에서 한국걸스카우트연맹주관 소녀의 날 행사가 열렸습니다. "
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
+            android:text="퐁당퐁당 맑은 물 에코캠프"
             android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -451,41 +447,40 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/fongdang01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img9"/>
 
-            </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 8월 27일(토) 시화나래조력문화원에서 대원과 지도자 160명이 참가한 가운데 ‘퐁당퐁당 맑은 물 에코캠프’가 열렸습니다."
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </LinearLayout>
         </android.support.v7.widget.CardView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
 
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
-            android:textSize="18dp"
+            android:text="소녀·연장대 공개토론회- '세상을 향해 외쳐라!'"
+            android:textSize="16dp"
             android:textStyle="bold"
             android:textColor="#000000"
             android:gravity="left"
@@ -502,40 +497,40 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/debate01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img10"/>
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 9월 3일(토) 연맹회관 10층에서 총37명(소녀·연장대원32명/지도자5명)이 참가한 가운데 ‘스마트폰이 인간관계에 미치는 영향’ 이라는 주제로 소녀·연장대 공개토론회가 열렸습니다. "
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
+            android:text="가족과 함께하는 스마티어링"
             android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -553,39 +548,39 @@
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/family01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img11"/>
 
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 9월 10일(토) 인사동, 북촌 일대에서 걸스카우트 대원 및 가족 90명이 참석한 가운데 ‘2016 서울걸스카우트 가족과 함께하는 스마티어링’이 실시되었습니다."
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
         <TextView
             android:layout_marginTop="@dimen/between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016 spring"
+            android:text="서울연맹 창립 60주년기념\n제35회 서울걸스카우트오리엔티어링 대회"
             android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -602,36 +597,36 @@
             app:cardUseCompatPadding="true"
             app:cardCornerRadius="@dimen/radius"
             android:layout_gravity="center"
-            android:layout_height="wrap_content">
-            <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@drawable/spring"
+                    android:src="@drawable/orienteering01"
                     android:scaleType="fitXY"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:layout_width="match_parent"
                     android:foregroundGravity="center"
-                    android:background="@drawable/girl"
                     android:layout_alignParentStart="true"
                     android:clickable="true"
                     android:id="@+id/img12"/>
 
-            </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="지난 10월 22일(토) 과천 서울대공원 동물원에서 총 235명(대원 195명, 지도자 40명)이 참가한 제35회 서울걸스카우트 오리엔티어링대회’가 열렸습니다."
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+            </LinearLayout>
         </android.support.v7.widget.CardView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건 2016 Spring이에요!!"
-            android:textSize="15dp"
-            android:textColor="#000000"
-            android:gravity="left"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-
-    </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

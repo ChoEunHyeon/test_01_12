@@ -51,6 +51,16 @@
             android:id="@+id/buttons_3"
             tools:gravity="center"
             android:layout_gravity="center_vertical|center"
+            android:layout_marginBottom="10dp"
+            android:background="#e1ca18" />
+
+        <Button
+            android:text="연간 계획"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttons_0"
+            tools:gravity="center"
+            android:layout_gravity="center_vertical|center"
             android:layout_marginBottom="30dp"
             android:background="#e1ca18" />
 
