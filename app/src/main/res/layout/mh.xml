@@ -1,34 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/our_background"
-    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mhbg"
+    android:orientation="vertical"
+    >
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="252dp"
-        android:src="@drawable/mhmh"
-        android:id="@+id/imageViewmhmh_4"
-        android:scaleType="fitXY"/>
-    <ImageView
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/mh_imgBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/mhmap"
-        android:id="@+id/imageViewmhmhmap4"
-        android:scaleType="fitXY"
-        android:layout_gravity="center"/>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-       android:src="@drawable/mhlast"
-        android:id="@+id/imageViewmhmh4"
-        android:scaleType="fitXY"/>
+        android:layout_height="70dp"
+        android:src="@drawable/mhimgbtn"
+        android:layout_marginTop="80dp"/>
+
 
 </LinearLayout>
-</ScrollView>

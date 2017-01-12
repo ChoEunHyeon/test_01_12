@@ -1,52 +1,53 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cho.test_12_02">
+    package="yeom.example.cho.test_12_02">
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/splash_image"
-        android:label="@string/app_name"
+        android:icon="@drawable/icon"
+        android:label=" 걸스카우트 서울연맹"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:hardwareAccelerated="true">
 
-        <activity android:name=".Splash">
+        <activity android:name="yeom.example.cho.test_12_02.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.HomeActivity"></activity>
 
         <fragment android:name=".Test2"></fragment>
 
-        <activity android:name=".Samuchc"></activity>
-        <activity android:name=".Test4"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Samuchc"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Test4"></activity>
         <fragment android:name=".Test5"></fragment>
-        <activity android:name=".Supum"></activity>
-        <activity android:name=".Instructor01"></activity>
-        <activity android:name=".Instructor02"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Supum"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Instructor01"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Instructor02"></activity>
         <fragment android:name=".News"></fragment>
         <fragment android:name=".Student"></fragment>
         <fragment android:name=".Instructor"></fragment>
         <fragment android:name=".Group"></fragment>
         <fragment android:name=".CMS"></fragment>
-        <activity android:name=".MH"></activity>
-        <activity android:name=".Yenmeangjang"></activity>
-        <activity android:name=".Group01"></activity>
-        <activity android:name=".Student01"></activity>
-        <activity android:name=".Student02"></activity>
-        <activity android:name=".Student03"></activity>
-        <activity android:name=".Student04"></activity>
-        <activity android:name=".Student05"></activity>
-        <activity android:name=".Student06"></activity>
-        <activity android:name=".Student07"></activity>
-        <activity android:name=".Student08"></activity>
-        <activity android:name=".Student09"></activity>
-        <activity android:name=".Student10"></activity>
-        <activity android:name=".Student11"></activity>
-        <activity android:name=".Student12"></activity>
-        <activity android:name=".Instructor03"></activity>
-        <activity android:name=".Yearly"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.MH"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Yenmeangjang"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Group01"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student01"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student02"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student03"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student04"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student05"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student06"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student07"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student08"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student09"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student10"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student11"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Student12"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Instructor03"></activity>
+        <activity android:name="yeom.example.cho.test_12_02.Yearly"></activity>
 
 
     </application>
