@@ -38,7 +38,7 @@ public class Test5 extends Fragment {
         imgbtn_mh =(ImageButton)v.findViewById(R.id.mh_imgBtn);
         imgbtn_mh.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "아! 홈페이지로 이동합니다", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "홈페이지로 이동합니다", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://gscamp.smpon.kr/theme3/index.php"));
                 startActivity(intent);
             }
