@@ -10,6 +10,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import yeom.example.cho.test_12_02.a.CMS;
+
 
 public class Test4 extends AppCompatActivity {
 

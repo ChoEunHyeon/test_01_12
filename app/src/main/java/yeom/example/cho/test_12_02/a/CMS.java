@@ -1,4 +1,4 @@
-package yeom.example.cho.test_12_02;
+package yeom.example.cho.test_12_02.a;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+
+import yeom.example.cho.test_12_02.CMS_dialog;
+import yeom.example.cho.test_12_02.R;
 
 /**
  * Created by Samsung on 2016-12-09.
